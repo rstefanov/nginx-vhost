@@ -1,0 +1,16 @@
+	server {
+  		server_name @@HOSTNAME@@ www.@@HOSTNAME@@;
+  		root "@@PATH@@";
+
+  		index index.php;
+  
+		access_log @@LOG_PATH@@/access.log;
+	        error_log @@LOG_PATH@@/error.log;
+	
+		location ~ \.php$ {
+                        try_files      $uri =404;
+                        fastcgi_pass   unix:@@SOCKET@@;
+                        fastcgi_index  index.php;
+                        include        fastcgi.conf;
+		}
+	}
