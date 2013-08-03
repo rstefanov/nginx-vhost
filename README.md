@@ -6,13 +6,11 @@ of multiple websites on the same server. Dont forget to make it executable with 
 
 ## How to use this script?
 
-Add a new domain name: ./nginx.sh example.com
-* You must enter username at prompt.
+* Add a new domain name: ./nginx.sh example.com
 
-Remove domain name: ./remove.sh example.com
-* You must enter username that will be deleted.
+* Remove domain name: ./remove.sh example.com
 
-Everything is automated except a small change that you need to do manually at nginx.conf.
+Everything is automated except a small change you need to do manually at nginx.conf.
 * Replace: include /etc/nginx/conf.d/*.conf;
 * With: include /etc/sites-enabled/*.conf;
 
