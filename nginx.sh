@@ -1,14 +1,10 @@
 #!/bin/bash
 # @author: Radoslav Stefanov
-# @автор: Радослав Стефанов
 # http://www.rstefanov.org 
 # http://www.directhost.bg
 # Created:   07/25/2013
-# Създаден на: 07/25/2013
-# Modified:  07/26/2013
-# Последна промяна: 07/26/2013
+# Modified:  07/27/2013
 # You are free to edit this file to suit your needs. :)
-# Можете да променяте файловете според вашите нужди, дори го препоръчвам :)
 
 NGINX_CONFIG='/etc/sites-available'
 NGINX_SITES_ENABLED='/etc/sites-enabled'
@@ -83,4 +79,4 @@ chown $USERNAME:$USERNAME /home/$HOME_DIR/ -R
 $NGINX_INIT reload
 $PHP_FPM_INIT reload
 
-echo -e "\nSite Created for $DOMAIN!
+echo -e "\nSite Created for $DOMAIN
